@@ -9,7 +9,7 @@ def calculator_substract_and_divide(arg1, arg2):
     if intro == 4:
         logging.info("Dzielę %d przez %d" % (arg1, arg2))
         result = arg1 / arg2
-    print(f"Wynik to {result}")
+    logging.info(f"Wynik to {result}")
 
 def calculator_add_and_multiply(arguments):
     if intro == 1:
@@ -25,7 +25,7 @@ def calculator_add_and_multiply(arguments):
             calculations = (calculations + f"{argument} ")
             result = result * argument
         logging.info(calculations)
-    print(f"Wynik to {result}")
+    logging.info(f"Wynik to {result}")
 
 if __name__ == "__main__":
     intro = int(input("Podaj działanie, posługując się odpowiednią liczbą: 1 Dodawanie, 2 Odejmowanie, 3 Mnożenie, 4 Dzielenie: "))
