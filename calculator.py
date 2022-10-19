@@ -50,7 +50,7 @@ if __name__ == "__main__":
             calculator_add(arguments)
         if intro == 3:
             calculator_multiply(arguments)
-    elif intro == 2 or intro == 4:
+    if intro == 2 or intro == 4:
         arg1 = int(input("Podaj pierwszą liczbę: "))
         arg2 = int(input("Podaj drugą liczbę: "))
         if intro == 2:
