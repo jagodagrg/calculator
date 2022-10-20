@@ -7,7 +7,7 @@ def calculator_add(arguments):
     result = 0
     for argument in arguments:
         calculations = calculations + f"{argument} "
-        result = result + argument
+        result += argument
     logging.info(calculations)
     logging.info(f"Wynik to {result}")
 
@@ -23,7 +23,7 @@ def calculator_multiply(arguments):
     result = 1
     for argument in arguments:
         calculations = calculations + f"{argument} "
-        result = result * argument
+        result *= argument
     logging.info(calculations)
     if len(arguments) == 0:
         result = 0
@@ -48,12 +48,12 @@ if __name__ == "__main__":
                 break
         if intro == 1:
             calculator_add(arguments)
-        if intro == 3:
+        else:
             calculator_multiply(arguments)
     if intro == 2 or intro == 4:
         arg1 = int(input("Podaj pierwszą liczbę: "))
         arg2 = int(input("Podaj drugą liczbę: "))
         if intro == 2:
             calculator_substract(arg1, arg2)
-        if intro == 4:
+        else:
             calculator_divide(arg1, arg2)
