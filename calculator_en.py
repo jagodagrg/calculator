@@ -12,8 +12,8 @@ def calculator_add(arguments):
     logging.info(f"The result is {result}")
 
 
-def calculator_substract(arg1, arg2):
-    logging.info("Substracting %d from %d" % (arg2, arg1))
+def calculator_subtract(arg1, arg2):
+    logging.info("Subtracting %d from %d" % (arg2, arg1))
     result = arg1 - arg2
     logging.info(f"The result is {result}")
 
@@ -38,7 +38,7 @@ def calculator_divide(arg1, arg2):
 
 if __name__ == "__main__":
     intro = int(input(
-        "Select an operation using a number: 1 Add, 2 Substract, 3 Multiply, 4 Divide: "))
+        "Select an operation using a number: 1 Add, 2 Subtract, 3 Multiply, 4 Divide: "))
     if intro == 1 or intro == 3:
         arguments = []
         while True:
@@ -56,6 +56,6 @@ if __name__ == "__main__":
         arg1 = int(input("Selected the first number: "))
         arg2 = int(input("Selected the second number: "))
         if intro == 2:
-            calculator_substract(arg1, arg2)
+            calculator_subtract(arg1, arg2)
         else:
             calculator_divide(arg1, arg2)

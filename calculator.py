@@ -12,7 +12,7 @@ def calculator_add(arguments):
     logging.info(f"Wynik to {result}")
 
 
-def calculator_substract(arg1, arg2):
+def calculator_subtract(arg1, arg2):
     logging.info("Odejmuję %d od %d" % (arg2, arg1))
     result = arg1 - arg2
     logging.info(f"Wynik to {result}")
@@ -54,6 +54,6 @@ if __name__ == "__main__":
         arg1 = int(input("Podaj pierwszą liczbę: "))
         arg2 = int(input("Podaj drugą liczbę: "))
         if intro == 2:
-            calculator_substract(arg1, arg2)
+            calculator_subtract(arg1, arg2)
         else:
             calculator_divide(arg1, arg2)
